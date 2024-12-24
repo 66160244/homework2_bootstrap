@@ -23,12 +23,38 @@
         </div>
     </header>
 
-    <main class="container my-5 text-center">
-        <h2 class="mb-4">ส่งข้อความถึงเรา</h2>
-        <button type="button"data-bs-toggle="modal" data-bs-target="#contactModal">
-            เปิดฟอร์มติดต่อ
-        </button>
-    </main>
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">ส่งข้อความถึงเรา</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="/submit" method="POST">
+                        <div class="mb-3">
+                            <label for="fullname" class="form-label">ชื่อ-นามสกุล *</label>
+                            <input type="text" class="form-control" id="fullname" name="fullname" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">อีเมล *</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tel" class="form-label">เบอร์โทรศัพท์</label>
+                            <input type="tel" class="form-control" id="tel" name="tel">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">ข้อความ *</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">ส่งข้อความ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
     <footer role="contentinfo">
