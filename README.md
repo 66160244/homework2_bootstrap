@@ -33,7 +33,7 @@
 - git add contact.html
 - git commit -m "edit footer and edit main"
 ## Part 5:แก้ไขรายละเอียดต่างๆโดยรวม
-git add .
+- git add .
 - git commit -m "all finishedx2"
 ## Part 6:push
 - git push origin develop
