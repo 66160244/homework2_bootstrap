@@ -121,7 +121,9 @@ footer {
     color: #fff;
     text-align: center;
 }
-
+h2 {
+    color: #333;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .grid-container {
