@@ -32,8 +32,8 @@
 - git commit -m "add form contact html"
 - git add contact.html
 - git commit -m "edit footer and edit main"
-##Part 5:แก้ไขรายละเอียดต่างๆโดยรวม
+## Part 5:แก้ไขรายละเอียดต่างๆโดยรวม
 git add .
 - git commit -m "all finishedx2"
-##Part 6:push
+## Part 6:push
 - git push origin develop
